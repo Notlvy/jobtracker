@@ -122,13 +122,7 @@ This installs pip correctly inside the venv. Everything works normally after thi
 
 ## Deployment
 
-This project is configured for deployment on [Railway](https://railway.app):
-
-- `Procfile` — runs gunicorn
-- `runtime.txt` — specifies Python version
-- `whitenoise` — serves static files in production
-
-See the deployment section in the docs for full instructions.
+TBD
 
 ## License
 
