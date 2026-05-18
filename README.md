@@ -20,23 +20,25 @@ A clean, dark-themed Django web application for tracking your personal job appli
 
 ## Project Structure
 
+```
 jobtracker/
 ├── manage.py
 ├── requirements.txt
 ├── Procfile
 ├── runtime.txt
-├── config/                 # Project settings and URL configuration
+├── config/
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
-└── applications/           # Main app
-├── models.py
-├── views.py
-├── forms.py
-├── urls.py
-└── templates/
-├── applications/   # Main templates
-└── registration/   # Auth templates
+└── applications/
+    ├── models.py
+    ├── views.py
+    ├── forms.py
+    ├── urls.py
+    └── templates/
+        ├── applications/
+        └── registration/
+```
 
 ## Getting Started
 
