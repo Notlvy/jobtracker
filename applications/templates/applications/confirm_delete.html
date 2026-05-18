@@ -1,0 +1,15 @@
+{% extends "applications/base.html" %}
+{% block content %}
+
+<div class="max-w-md mx-auto text-center py-20">
+    <p class="text-4xl mb-4">🗑</p>
+    <h1 class="text-xl font-bold mb-2">Delete this application?</h1>
+    <p class="text-gray-400 mb-8">{{ app.role }} at {{ app.company }}</p>
+    <form method="post" class="flex gap-4 justify-center">
+        {% csrf_token %}
+        <button type="submit" class="bg-red-600 hover:bg-red-500 px-5 py-2 rounded-md font-medium transition">Yes, delete</button>
+        <a href="{% url 'application_list' %}" class="text-gray-400 hover:text-white px-5 py-2 transition">Cancel</a>
+    </form>
+</div>
+
+{% endblock %}
